@@ -1,0 +1,84 @@
+.rotating-border {
+
+    display: flex;
+    justify-content: center;
+
+    width: 90%;
+    height: 200px;
+    background: linear-gradient(90deg, purple 50%, transparent 50%), linear-gradient(90deg, purple 50%, transparent 50%), linear-gradient(0deg, purple 50%, transparent 50%), linear-gradient(0deg, purple 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+    padding: 50px;
+    animation: border-dance 8s infinite linear;
+    border: 0;
+    border-radius: 10px;
+
+}
+.animalCard{
+    padding: 8px;
+    border: 4px dashed black;
+    border-radius: 10px;
+    width: 90%;
+    height: 200px;
+}
+@keyframes border-dance {
+    0% {
+        background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+    }
+
+    100% {
+        background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+    }
+}
+
+.Button {
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.Buttonimg {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.Buttonimg:hover {
+    opacity: 0.7;
+}
+
+.col-6 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes border-dance {
+    0% {
+        background-position: 0px 0px, 300px 195px, 0px 150px, 100% 0px;
+    }
+
+    100% {
+        background-position: 300px 0px, 0px 195px, 0px 0px, 100% 150px;
+    }
+}
+.back{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+.sor{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.center{
+    margin: 0 auto;
+}
+.row{
+    height:fit-content;
+}
+
